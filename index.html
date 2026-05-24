@@ -180,7 +180,7 @@
             display: inline-block;
         }
 
-        /* تنسيق الأيقونات المزدوجة للأطفال والكبار */
+        /* تنسيق الأيقونات المزدوجة للأطفال والشباب */
         .icon-pair {
             display: flex;
             justify-content: center;
@@ -199,7 +199,106 @@
             font-size: 0.95rem;
         }
 
-        /* تصميم قسم الآراء المحدث (أشخاص وصور تعبيرية) */
+        /* تصميم قسم السبحة الإلكترونية التفاعلي الجديد */
+        .sebha-section {
+            background-color: var(--secondary-color);
+            max-width: 100%;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .sebha-container {
+            max-width: 450px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(74, 46, 43, 0.05);
+            border: 1px solid var(--card-border);
+        }
+
+        .sebha-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+        }
+
+        .sebha-target {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .sebha-counter {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-family: monospace, sans-serif;
+        }
+
+        /* شريط تقدم التسبيح الحركي */
+        .progress-container {
+            width: 100%;
+            background-color: #FAF3F0;
+            height: 8px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid rgba(74, 46, 43, 0.05);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: var(--accent-color);
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .sebha-btn {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(45, 106, 79, 0.3);
+            transition: transform 0.05s, box-shadow 0.2s;
+            outline: none;
+            user-select: none;
+        }
+
+        .sebha-btn:active {
+            transform: scale(0.92);
+            box-shadow: 0 4px 10px rgba(45, 106, 79, 0.2);
+        }
+
+        .sebha-reset {
+            margin-top: 25px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 0.95rem;
+        }
+
+        .sebha-reset:hover {
+            color: var(--primary-color);
+        }
+
+        /* تصميم قسم الآراء (أشخاص وصور تعبيرية) */
         .testimonials-list {
             display: flex;
             flex-direction: column;
@@ -319,6 +418,7 @@
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#features">مميزاتنا</a></li>
                 <li><a href="#courses">برامجنا</a></li>
+                <li><a href="#sebha">السبحة الإلكترونية</a></li>
                 <li><a href="#testimonials">آراء الطلاب</a></li>
             </ul>
         </div>
@@ -360,25 +460,42 @@
                 
                 <div class="card">
                     <div class="icon-pair">
-                        <span>👶</span><span>🧓</span>
+                        <span>👶</span><span>🧑‍💻</span>
                     </div>
-                    <h3>تحفيظ الأطفال والكبار</h3>
-                    <p>تأسيس صحيح باستخدام منهج نور البيان للأطفال، ومنهج مكثف للكبار، وتحفيظ جزء عم والأذكار بطريقة تفاعلية حبية لجميع الأعمار.</p>
+                    <h3>تحفيظ الأطفال والشباب</h3>
+                    <p>تأسيس صحيح باستخدام منهج نور البيان للأطفال، ومنهج مكثف ومناسب للشباب، وتحفيظ جزء عم والأذكار بطريقة تفاعلية حبية لجميع الأعمار.</p>
                 </div>
 
                 <div class="card">
                     <span class="icon">📖</span>
                     <h3>تجويد وتصحيح التلاوة</h3>
-                    <p>حلقات مخصصة للكبار والشباب لضبط مخارج الحروف وقراءة القرآن كما أُنزل.</p>
+                    <p>حلقات مخصصة للشباب والكبار لضبط مخارج الحروف وقراءة القرآن كما أُنزل.</p>
                 </div>
 
                 <div class="card">
                     <span class="icon">🕌</span>
                     <h3>الدراسات الإسلامية</h3>
-                    <p>تعليم السيرة النبوية المبسطة، الفقه الميسر، والأخلاق والآداب الإسلامية.</p>
+                    <p>تعليم السيرة النبوية المبسطة، الفقه الميسر، والأخلاق والآداب الإسلامية للناشئة.</p>
                 </div>
                 
             </div>
+        </div>
+    </section>
+
+    <section id="sebha" class="sebha-section">
+        <h2 class="section-title">السبحة الإلكترونية للأكاديمية</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">شاركونا الأجر واذكروا الله خلال تصفحكم للموقع</p>
+        
+        <div class="sebha-container">
+            <div class="sebha-text" id="sebha-text">سُبْحَانَ اللهِ</div>
+            <div class="sebha-target" id="sebha-target">الهدف الحالي: 0 من 33</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="sebha-counter" id="sebha-counter">0</div>
+            <button class="sebha-btn" id="sebha-btn">سبّح</button>
+            <br>
+            <button class="sebha-reset" id="sebha-reset">إعادة ضبط من البداية</button>
         </div>
     </section>
 
@@ -391,7 +508,7 @@
                 <div class="testimonial-avatar">👨‍🦳</div>
                 <div class="testimonial-content">
                     <p class="testimonial-name">أبو محمد</p>
-                    <p class="testimonial-text">"جودة التعليم والاهتمام الفردي بالطلاب الكبار كانت تجربة رائعة لي. لم أتخيل أنني سأتمكن من تصحيح تلاوتي وضبط التجويد في هذا العمر، ولكن بفضل الله ثم الأكاديمية تحقق الحلم."</p>
+                    <p class="testimonial-text">"جودة التعليم والاهتمام الفردي بفئة الشباب كانت تجربة رائعة لابني. الأكاديمية تساعدهم على استغلال وقتهم في حفظ القرآن وتصحيح تلاوتهم بأسلوب مرن ومشجع جداً."</p>
                 </div>
             </div>
 
@@ -415,6 +532,73 @@
     <footer>
         <p>© 2026 جميع الحقوق محفوظة لأكاديمية نور على نور.</p>
     </footer>
+
+    <script>
+        // مصفوفة تحتوي على البيانات الكاملة لكل ذكر والعدد المطلوب منه بالترتيب
+        const azkarList = [
+            { text: "سُبْحَانَ اللهِ", limit: 33 },
+            { text: "الْحَمْدُ للهِ", limit: 33 },
+            { text: "اللهُ أَكْبَرُ", limit: 33 },
+            { text: "لَا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ", limit: 100 },
+            { text: "سُبْحَانَ اللهِ وَبِحَمْدِهِ، سُبْحَانَ اللهِ الْعَظِيمِ", limit: 100 },
+            { text: "سُبْحَانَ اللهِ الْعَظِيمِ وَبِحَمْدِهِ", limit: 100 }
+        ];
+
+        let currentStep = 0;   // مؤشر الذكر الحالي في المصفوفة
+        let currentCount = 0;  // عداد التسبيحات للذكر الحالي فقط
+
+        const textElement = document.getElementById('sebha-text');
+        const targetElement = document.getElementById('sebha-target');
+        const counterElement = document.getElementById('sebha-counter');
+        const progressBar = document.getElementById('progress-bar');
+        const sebhaBtn = document.getElementById('sebha-btn');
+        const resetBtn = document.getElementById('sebha-reset');
+
+        // دالة لتحديث الواجهة بالبيانات الحالية للذكر
+        function updateUI() {
+            const currentZikr = azkarList[currentStep];
+            textElement.textContent = currentZikr.text;
+            counterElement.textContent = currentCount;
+            targetElement.textContent = `الهدف الحالي: ${currentCount} من ${currentZikr.limit}`;
+            
+            // حساب وتحديث نسبة التقدم في الشريط البصري
+            const progressPercentage = (currentCount / currentZikr.limit) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        // حدث الضغط على زر التسبيح الرئيسي
+        sebhaBtn.addEventListener('click', () => {
+            const currentZikr = azkarList[currentStep];
+            currentCount++;
+
+            if (currentCount >= currentZikr.limit) {
+                // عند الوصول للعدد المطلوب، ننتقل للذكر التالي وتصفير العداد الفرعي
+                currentCount = 0;
+                currentStep++;
+
+                // إذا انتهت كل الأذكار الستة، نعود للذكر الأول من جديد
+                if (currentStep >= azkarList.length) {
+                    currentStep = 0;
+                }
+
+                // تأثير حركة نبض خفيف عند الانتقال لذكر جديد
+                textElement.style.transform = "scale(1.08)";
+                setTimeout(() => textElement.style.transform = "scale(1)", 150);
+            }
+
+            updateUI();
+        });
+
+        // حدث الضغط على زر إعادة الضبط من البداية تماماً
+        resetBtn.addEventListener('click', () => {
+            currentStep = 0;
+            currentCount = 0;
+            updateUI();
+        });
+
+        // تشغيل الحالة البدئية للسبحة فور تحميل الصفحة
+        updateUI();
+    </script>
 
 </body>
 </html>
